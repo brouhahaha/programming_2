@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список языков</title>
+</head>
+<body>
+<ul>
+    {% for language, code in langcodes.items() %}
+        <li>{{ language }} - {{ code }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
