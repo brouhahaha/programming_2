@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Опять от меня сбежала последняя электричка...</title>
+</head>
+<body>
+<a href="http://127.0.0.1:5000/">Главная страница</a></br>
+<a href="http://127.0.0.1:5000/stats/">Статистика</a></br>
+<a href="http://127.0.0.1:5000/json/">json</a></br>  
+<a href="http://127.0.0.1:5000/search/">Поиск</a></br> 
+</p>Пожалуйста, заполните небольшой опрос.</p>
+<form action="/thanks">
+<p><b>Ваш пол</b> </br>
+    <input type="radio" name="sex" value="m">Мужской<Br>
+    <input type="radio" name="sex" value="f">Женский<Br>
+<p><b>Сколько вам лет?</b> <input type="text" name="age" value=""></p>
+<p><b>Где вы прожили большую часть жизни?(укажите город)</b> <input type="text" name="city" value=""></p>
+<p><b>Как часто вы пользуетесь пригородным общественным транспортом?</b> </br>
+    <input type="radio" name="freq_use" value="day">Каждый день<Br>
+    <input type="radio" name="freq_use" value="week">Несколько раз в месяц<Br>
+    <input type="radio" name="freq_use" value="year">Несколько раз в год<Br>
+    <input type="radio" name="freq_use" value="never">Обычно не пользуюсь<Br>
+<p><b>Как бы вы назвали изображённый на картинке вид транспорта?</p>
+<img src="{{url_for('static', filename='eleka.jpg')}}" /> 
+<br />
+<input type="checkbox" name="var1" value="train">Поезд<Br>
+<input type="checkbox" name="var2" value="suburbtr">Электричка<Br>
+<input type="checkbox" name="var3" value="dog">Собака<Br>
+<input type="checkbox" name="var4" value="lipa">Липа<Br>
+<input type="checkbox" name="var5" value="electros">Электрос<Br>
+<input type="checkbox" name="var6" value="electros">Электрон<Br>
+<input type="checkbox" name="var7" value="prigorod">Пригородка<Br>
+<input type="checkbox" name="var8" value="elka">Эл(ь)ка<Br>
+<p><input type="submit"></p>
+</form>
+</body>
+</html>
