@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Статистика</title>
+</head>
+<body>
+
+<a href="http://127.0.0.1:5000/">Главная страница</a></br>
+<a href="http://127.0.0.1:5000/stats/">Статистика</a></br>
+<a href="http://127.0.0.1:5000/json/">json</a></br>  
+<a href="http://127.0.0.1:5000/search/">Поиск</a></br> 
+	<b>Статистика</b>
+</p><b>Пол</b></p>  
+	{% for sex, number in sexs.items() %} 
+		<p>{{sex}}: {{number}}</p>
+	{% endfor %}
+</p><b>Город</b></p>  
+	{% for city, number in cities.items() %} 
+		<p>{{city}}: {{number}}</p>
+	{% endfor %}
+</p><b>Возраст</b></p>  
+	{% for age, number in ages.items() %} 
+		<p>{{age}}: {{number}}</p>
+	{% endfor %}
+</p><b>Выбранные варианты</b></p>  
+	{% for lexeme, number in variants.items() %} 
+		<p>{{lexeme}}: {{number}}</p>
+	{% endfor %}
+
+
+
+</body>
+</html>
