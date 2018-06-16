@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Сеть друзей: авторизация</title>
+</head>
+<body>
+Для корректной работы приложения необходим сервисный ключ пользователя Вконтакте. Чтобы получить его, выполните следующие действия: <br>
+1. Передите по ссылке снизу  <br>
+2. Следуйте указаниям на странице <br>
+3. Скопируйте полученный токен  <br>
+4. Вернитесь на эту страницу и введите его в окно ниже <br>
+
+<a href="https://oauth.vk.com/authorize?client_id=6603537&display=page&redirect_uri=https://project-friends-network.herokuapp.com/gettoken/&scope=friends&offline&response_type=code&v=5.78&state=123456">Получить токен!</a></br>
+<br>
+<form action="/ok">
+<p><b>Access_token</b> <input type="text" name="token" value=""></p>
+</form>
+</body>
+</html>
